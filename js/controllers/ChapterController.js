@@ -9,8 +9,8 @@
             $scope.nextChapterIndex = "#";
         }
         //code for updated version
-        //if ( $routeParams.chapterId == 0) { $scope.backUrl = "#/books/{{ currentBookIndex }}"; }
-        //else { $scope.backUrl = "#/books/{{ currentBookIndex }}/chapters/{{ currentChapterIndex - 1 }}"; }
+        if ( $routeParams.chapterId == 0) { $scope.backUrl = "#/books/{{ currentBookIndex }}"; }
+        else { $scope.backUrl = "#/books/{{ currentBookIndex }}/chapters/{{ currentChapterIndex - 1 }}"; }
     });
     
 
@@ -20,6 +20,6 @@
     $scope.nextChapterIndex = $scope.currentChapterIndex + 1;
 
     //Test element for angular-doesnt-boot-on-reload problem 
-    //$scope.backUrl = "#/books/{{ currentBookIndex }}";
+   // $scope.backUrl = "#/books/{{ currentBookIndex }}";
 
 }]);

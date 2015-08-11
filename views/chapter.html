@@ -1,8 +1,11 @@
-﻿<a class="button back" ng-href="{{backUrl}}">Back</a>
+﻿ <a class="button back" ng-href="#/books/{{ currentBookIndex }}">Back</a> 
+<!-- code for updated version -->
+<!-- <a class="button back" ng-href="{{backUrl}}">Back</a> -->
+
 <div class="chapter">
     <p><span class="title">  </span> <span class="author">  </span></p>
     <h2 class="chapter-title"> {{ chapter.title }} </h2>
-    >
+    > {{ backUrl }}
     
     <!--
     TODO: Loop through chapter.paragraphs and display each one with this HTML  -->
