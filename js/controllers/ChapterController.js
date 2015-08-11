@@ -11,6 +11,16 @@
         //code for updated version
         //if ( $routeParams.chapterId == 0) { $scope.backUrl = "#/books/{{ currentBookIndex }}"; }
         //else { $scope.backUrl = "#/books/{{ currentBookIndex }}/chapters/{{ currentChapterIndex - 1 }}"; }
+
+        if ($routeParams.chapterId == "0")
+            $scope.backUrl = "#/books/" + $routeParams.bookId;
+        else
+            $scope.backUrl = "#/books/" + $routeParams.bookId + "/chapters/" + ($routeParams.chapterId - 1);
+
+        //başka bir yazım yolu
+        //$scope.backUrl = $routeParams.chapterId == 0
+        //    ? "#/books/" + currentBookIndex
+        //    : "#/books/" + "currentBookIndex" + "/chapters/" + currentChapterIndex - 1;
     });
     
 
