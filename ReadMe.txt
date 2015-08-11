@@ -4,3 +4,4 @@ A tutorial project from CodeCademy.com about creating a reader app with 3 views;
 3. a view for reading book's chapters
 
 Updated version will change the function of "back" button on chapter view from going to book's page to going to previous chapter.
+Code for updated version is on js/controller/ChapterController.js and views/chapter.html
